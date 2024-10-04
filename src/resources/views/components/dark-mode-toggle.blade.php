@@ -8,6 +8,7 @@
             if (value) return document.documentElement.classList.add('dark');
             return document.documentElement.classList.remove('dark')
         })
+
     }
 }"
     @click="darkMode=!darkMode">

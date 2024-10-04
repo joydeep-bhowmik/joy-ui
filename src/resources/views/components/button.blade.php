@@ -3,7 +3,7 @@
 @php
 
     $baseClasses = 'relative inline-flex items-center  font-medium justify-center gap-2 whitespace-nowrap disabled:opacity-75 dark:disabled:opacity-75 
-        focus:ring-2 disabled:cursor-default disabled:pointer-events-none h-10 text-sm rounded-lg px-3 shadow-sm group-[]/button:-ml-[1px] group-[]/button:first:ml-0';
+        focus:ring-2 disabled:cursor-default disabled:pointer-events-none h-10 text-xs rounded-lg px-3 shadow-sm group-[]/button:-ml-[1px] group-[]/button:first:ml-0 ';
 
     $variantClasses = match ($variant) {
         'danger'
