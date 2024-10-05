@@ -12,11 +12,13 @@
             => 'bg-black text-white border border-black hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:border-gray-300 focus:ring-gray-600',
         'default'
             => 'bg-slate-100 hover:bg-zinc-50 dark:bg-zinc-700 dark:hover:bg-zinc-600/75 text-zinc-800 dark:text-white border border-zinc-200 hover:border-zinc-200 border-b-zinc-300/80 dark:border-zinc-600 dark:hover:border-zinc-600',
+        'ghost' => 'bg-transparent focus:bg-slate-200 dark:text-white dark:focus:bg-slate-700',
         default => '',
     };
 @endphp
 
-<button {{ $attributes->merge(['class' => "$baseClasses $variantClasses"]) }}>
+<button {{ $attributes->merge(['class' => "$baseClasses $variantClasses"]) }} wire:loading.attr='disabled'
+    wire:loading.class='opacity-55' wire:target='{{ $wireTarget }}'>
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <svg class="size-4 animate-spin" wire:loading wire:target='{{ $wireTarget }}' xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24" fill="currentColor">

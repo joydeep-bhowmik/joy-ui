@@ -53,8 +53,8 @@
                 {{ $slot }}
             </div>
             @isset($footer)
-                <div class="p-2">
-                    {{ $footer }}
+                <div class="flex gap-4 p-2">
+                    <div class="item-center ml-auto flex gap-2"> {{ $footer }}</div>
                 </div>
             @endisset
         </div>
