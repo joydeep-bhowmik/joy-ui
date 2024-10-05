@@ -12,7 +12,7 @@
             => 'bg-black text-white border border-black hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:border-gray-300 focus:ring-gray-600',
         'default'
             => 'bg-slate-100 hover:bg-zinc-50 dark:bg-zinc-700 dark:hover:bg-zinc-600/75 text-zinc-800 dark:text-white border border-zinc-200 hover:border-zinc-200 border-b-zinc-300/80 dark:border-zinc-600 dark:hover:border-zinc-600',
-        'ghost' => 'bg-transparent focus:bg-slate-200 dark:text-white dark:focus:bg-slate-700',
+        'ghost' => 'bg-transparent shadow-none focus:bg-slate-200 dark:text-white dark:focus:bg-slate-700',
         default => '',
     };
 @endphp
