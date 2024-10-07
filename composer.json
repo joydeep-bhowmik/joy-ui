@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JoydeepBhowmik\\JoyUI\\Providers\\JoyUierviceProvider"
+                "JoydeepBhowmik\\JoyUI\\Providers\\JoyUiServiceProvider"
             ]
         }
     },
